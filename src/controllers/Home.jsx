@@ -6,6 +6,7 @@ import axios from "axios";
 import baseUrl from "../configuration/baseUrl";
 const url = `${baseUrl}/updateItem`;
 function addItem(e, url) {
+  console.log("Thsi isurd", url);
   e.preventDefault();
   let payload = { name: "Shashi", content: e.target[0].value };
   axios.post(url, payload);
@@ -17,6 +18,7 @@ function Home() {
   useEffect(() => {
     async function getContents() {
       const url = `${baseUrl}/getContent`;
+      console.log("This is url", url);
       const fetched__contents = await axios.get(url);
       setContents(fetched__contents.data);
     }

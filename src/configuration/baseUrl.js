@@ -1,2 +1,2 @@
-const baseUrl = "https://writeoninternet.herokuapp.com/";
+const baseUrl = "https://writeoninternet.herokuapp.com";
 export default baseUrl;
