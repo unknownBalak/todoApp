@@ -1,0 +1,24 @@
+.card {
+  border: 1px solid #00000030;
+  background-color: rgb(128 128 128 / 3%);
+  padding: 10px;
+  margin: 5px;
+  min-width: 70%;
+}
+.author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 11px;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+.authorIcon {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+.css-i4bv87-MuiSvgIcon-root {
+  font-size: 17px !important;
+  color: #818181 !important;
+}
