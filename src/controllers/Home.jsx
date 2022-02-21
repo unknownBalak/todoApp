@@ -3,16 +3,8 @@ import Card from "./Card";
 import "./styles.css";
 import Button from "@mui/material/Button";
 import axios from "axios";
-import baseUrl from "../configuration/baseUrl"
+import baseUrl from "../configuration/baseUrl";
 const url = `${baseUrl}/updateItem`;
-const contents = [
-  { id: 13, content: "this is content1" },
-  { id: 14, content: "this is content2" },
-  { id: 15, content: "this is content3" },
-  { id: 16, content: "this is content4" },
-  { id: 17, content: "this is content5" },
-];
-
 function addItem(e, url) {
   e.preventDefault();
   let payload = { name: "Shashi", content: e.target[0].value };
