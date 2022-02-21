@@ -22,7 +22,6 @@ function Home() {
   useEffect(() => {
     async function getContents() {
       const url = `${baseUrl}/getContent`;
-      console.log("This is url", url);
       const fetched__contents = await axios.get(url);
       setContents(fetched__contents.data);
     }
