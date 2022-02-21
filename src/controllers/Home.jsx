@@ -8,7 +8,11 @@ const url = `${baseUrl}/updateItem`;
 function addItem(e, url) {
   console.log("Thsi isurd", url);
   e.preventDefault();
-  let payload = { name: "Shashi", content: e.target[0].value };
+  let payload = {
+    name: "Shashi",
+    content: e.target[0].value,
+    time: new Date().getTime(),
+  };
   axios.post(url, payload);
   e.target.reset();
 }

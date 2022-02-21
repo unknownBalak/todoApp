@@ -4,6 +4,7 @@
   padding: 10px;
   margin: 5px;
   min-width: 70%;
+  cursor: pointer;
 }
 .author {
   display: flex;
@@ -11,7 +12,6 @@
   font-size: 11px;
   align-items: center;
   font-weight: 600;
-  cursor: pointer;
 }
 .authorIcon {
   align-items: center;
@@ -21,4 +21,8 @@
 .css-i4bv87-MuiSvgIcon-root {
   font-size: 17px !important;
   color: #818181 !important;
+}
+.userName {
+  display: flex;
+  flex-direction: column;
 }
